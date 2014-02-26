@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (c)2013 Gymnasium Köniz-Lerbermatt
+# Copyright (c)2013 Gymnasium Koeniz-Lerbermatt
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser(description='Create SSH update script for syswr
 parser.add_argument('-c', '--controller', help='Controller DNS name or IP, this is not localhost here.', required=True)
 parser.add_argument('-u', '--user', help='Site admin username.', required=True)
 parser.add_argument('-p', '--password', help='Site admin password.', required=True)
-parser.add_argument('-t', '--targetversion', help='Target firmware version.', required=True)
+parser.add_argument('-t', '--targetversion', help='Target firmware version. Look up precise versioning in the Ubiquiti KB, also see /usr/lib/unifi/dl/firmware/', required=True)
 
 args = parser.parse_args()
 
