@@ -3,7 +3,7 @@
 import argparse
 from unifi.controller import Controller
 
-parser = argparse.ArgumentParser(description='Create SSH update script for syswrapper.sh based firmware mass-upgrade.')
+parser = argparse.ArgumentParser(description='Create SSH update script for syswrapper.sh based firmware mass-upgrade, requires OpenSSH and sshpass to work.')
 parser.add_argument('-c', '--controller', help='Controller DNS name or IP, this cannot be localhost here.', required=True)
 parser.add_argument('-u', '--user', help='Site admin username.', required=True)
 parser.add_argument('-p', '--password', help='Site admin password.', required=True)
